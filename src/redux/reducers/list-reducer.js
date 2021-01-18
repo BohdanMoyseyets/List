@@ -24,7 +24,7 @@ let initial_state = {
 const listReducer = (state = initial_state, action) => {
     switch (action.type) {
         case ADD_ITEM: {
-            let new_id = state.listData.length > 0 ? state.listData[state.listData.length - 1].id + 1 : 1;
+           let new_id = state.listData.length > 0 ?  Math.max.apply(Math, state.listData.map(function(o) { return o.id; })) + 1 : 1;
             let newItemData = {
                 id: new_id,
                 title: state.newTitleText,
