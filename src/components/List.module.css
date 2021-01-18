@@ -1,0 +1,24 @@
+.list {
+  background-color: #fff;
+}
+
+.titles{
+  display: flex;
+  padding: 7px;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.name{
+  width: 300px;
+  font-size: 18px;
+}
+
+.status{
+  text-align: center;
+  width: 100px;
+}
+
+.add_item_form{
+  text-align: center;
+}
